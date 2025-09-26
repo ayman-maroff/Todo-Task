@@ -1,0 +1,17 @@
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\bin\Debug\net8.0\TodoApp.Application.deps.json
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\bin\Debug\net8.0\TodoApp.Application.dll
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\bin\Debug\net8.0\TodoApp.Application.pdb
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\bin\Debug\net8.0\TodoApp.Core.dll
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\bin\Debug\net8.0\TodoApp.Domain.dll
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\bin\Debug\net8.0\TodoApp.Core.pdb
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\bin\Debug\net8.0\TodoApp.Domain.pdb
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\TodoApp.Application.csproj.AssemblyReference.cache
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\TodoApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\TodoApp.Application.AssemblyInfoInputs.cache
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\TodoApp.Application.AssemblyInfo.cs
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\TodoApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\TodoApp..05D78BBE.Up2Date
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\TodoApp.Application.dll
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\refint\TodoApp.Application.dll
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\TodoApp.Application.pdb
+C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Application\obj\Debug\net8.0\ref\TodoApp.Application.dll

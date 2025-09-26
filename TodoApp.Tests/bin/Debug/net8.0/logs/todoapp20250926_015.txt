@@ -1,0 +1,9 @@
+2025-09-26 18:42:23.152 +03:00 [INF] User profile is available. Using 'C:\Users\ASUA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-26 18:42:23.179 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/todo - null null
+2025-09-26 18:42:23.186 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Owner)
+2025-09-26 18:42:23.187 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-26 18:42:23.187 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/todo - 302 null null 8.2961ms
+2025-09-26 18:42:23.188 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2Fapi%2Ftodo - null null
+2025-09-26 18:42:23.191 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2Fapi%2Ftodo - 404 null null 2.5594ms
+2025-09-26 18:42:23.191 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/Account/Login, Response status code: 404

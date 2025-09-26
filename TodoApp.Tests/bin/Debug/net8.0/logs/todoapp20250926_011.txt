@@ -1,0 +1,17 @@
+2025-09-26 18:22:54.088 +03:00 [INF] User profile is available. Using 'C:\Users\ASUA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-26 18:22:54.110 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/todo - null null
+2025-09-26 18:22:54.117 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Owner)
+2025-09-26 18:22:54.118 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-26 18:22:54.118 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/todo - 302 null null 7.6184ms
+2025-09-26 18:22:54.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2Fapi%2Ftodo - null null
+2025-09-26 18:22:54.121 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2Fapi%2Ftodo - 404 null null 2.0599ms
+2025-09-26 18:22:54.121 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/Account/Login, Response status code: 404
+2025-09-26 18:26:30.572 +03:00 [INF] User profile is available. Using 'C:\Users\ASUA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-26 18:26:30.792 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/todo - application/json; charset=utf-8 12
+2025-09-26 18:26:30.851 +03:00 [INF] Executing endpoint 'TodoApp.Api.Controllers.TodoController.CreateTodo (TodoApp.Api)'
+2025-09-26 18:26:30.893 +03:00 [INF] Route matched with {action = "CreateTodo", controller = "Todo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTodo(TodoApp.Application.DTOs.CreateTodoDto, FluentValidation.IValidator`1[TodoApp.Application.DTOs.CreateTodoDto]) on controller TodoApp.Api.Controllers.TodoController (TodoApp.Api).
+2025-09-26 18:26:31.365 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FluentValidation.Results.ValidationFailure, FluentValidation, Version=12.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-26 18:26:31.383 +03:00 [INF] Executed action TodoApp.Api.Controllers.TodoController.CreateTodo (TodoApp.Api) in 486.4452ms
+2025-09-26 18:26:31.388 +03:00 [INF] Executed endpoint 'TodoApp.Api.Controllers.TodoController.CreateTodo (TodoApp.Api)'
+2025-09-26 18:26:31.396 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/todo - 400 null application/json; charset=utf-8 607.6234ms

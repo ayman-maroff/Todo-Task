@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: todoapp-sqlserver
+    environment:
+      SA_PASSWORD: "MyP@ssw0rd123!" 
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "pgrep sqlservr || exit 1"] 
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 40s
+    restart: unless-stopped
+
+  todoapp-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: todoapp-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80    
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=TodoAppDb;User Id=sa;Password=MyP@ssw0rd123!;TrustServerCertificate=True;MultipleActiveResultSets=true;Connect Timeout=30
+    ports:
+      - "5000:80" 
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    restart: on-failure
+
+volumes:
+  sqlserver_data:

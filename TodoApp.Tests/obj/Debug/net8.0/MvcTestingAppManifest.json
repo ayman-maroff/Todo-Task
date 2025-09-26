@@ -1,0 +1,7 @@
+{
+  "TodoApp.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ASUA\\source\\repos\\TodoApp.Api\\TodoApp.Api",
+  "TodoApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ASUA\\source\\repos\\TodoApp.Api\\TodoApp.Application",
+  "TodoApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ASUA\\source\\repos\\TodoApp.Api\\TodoApp.Core",
+  "TodoApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ASUA\\source\\repos\\TodoApp.Api\\TodoApp.Domain",
+  "TodoApp.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ASUA\\source\\repos\\TodoApp.Api\\TodoApp.Infrastructure"
+}

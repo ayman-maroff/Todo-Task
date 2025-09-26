@@ -1,0 +1,43 @@
+2025-09-26 18:16:38.146 +03:00 [INF] User profile is available. Using 'C:\Users\ASUA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-26 18:16:38.190 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/todo - null null
+2025-09-26 18:16:38.198 +03:00 [INF] Executing endpoint 'TodoApp.Api.Controllers.TodoController.GetAllTodos (TodoApp.Api)'
+2025-09-26 18:16:38.206 +03:00 [INF] Route matched with {action = "GetAllTodos", controller = "Todo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTodos(System.Nullable`1[System.Guid], System.Nullable`1[TodoApp.Domain.Entities.Priority], Int32, Int32) on controller TodoApp.Api.Controllers.TodoController (TodoApp.Api).
+2025-09-26 18:16:38.242 +03:00 [INF] Executed action TodoApp.Api.Controllers.TodoController.GetAllTodos (TodoApp.Api) in 34.9373ms
+2025-09-26 18:16:38.243 +03:00 [INF] Executed endpoint 'TodoApp.Api.Controllers.TodoController.GetAllTodos (TodoApp.Api)'
+2025-09-26 18:16:38.249 +03:00 [ERR] Unhandled exception occurred
+System.InvalidOperationException: Services for database providers 'Microsoft.EntityFrameworkCore.SqlServer', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at TodoApp.Infrastructure.Persistence.TodoRepository.GetAllAsync() in C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Infrastructure\Persistence\TodoRepository.cs:line 32
+   at TodoApp.Infrastructure.Services.TodoService.GetTodosWithFiltersAsync(Nullable`1 categoryId, Nullable`1 priority, Int32 pageNumber, Int32 pageSize) in C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Infrastructure\Services\TodoService.cs:line 62
+   at TodoApp.Api.Controllers.TodoController.GetAllTodos(Nullable`1 categoryId, Nullable`1 priority, Int32 pageNumber, Int32 pageSize) in C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Api\Controllers\TodoController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at TodoApp.Infrastructure.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ASUA\source\repos\TodoApp.Api\TodoApp.Infrastructure\Middlewares\GlobalExceptionMiddleware.cs:line 25
+2025-09-26 18:16:38.304 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/todo - 400 null application/json 114.3503ms
+2025-09-26 18:22:53.719 +03:00 [INF] User profile is available. Using 'C:\Users\ASUA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-26 18:22:53.895 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/todo - application/json; charset=utf-8 12
+2025-09-26 18:22:53.957 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Owner)
+2025-09-26 18:22:53.968 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-26 18:22:53.980 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2Fapi%2Ftodo - null null
+2025-09-26 18:22:53.979 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/todo - 302 null null 87.1426ms
+2025-09-26 18:22:53.986 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/Account/Login?ReturnUrl=%2Fapi%2Ftodo - 404 null null 6.3471ms
+2025-09-26 18:22:53.989 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/Account/Login, Response status code: 404
